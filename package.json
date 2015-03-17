@@ -1,0 +1,19 @@
+{
+  "name": "builder-stylus",
+  "version": "0.0.1",
+  "description": "Stylus Plugin for component-builder2",
+  "main": "builder-stylus.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/coffee -o . builder-stylus.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sse4_crc32": "^3.0.1",
+    "stylus": "^0.50.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1"
+  }
+}
