@@ -1,5 +1,5 @@
-stylus = require('stylus')
-calculate = require('sse4_crc32').calculate
+stylus = require 'stylus'
+crc32 = require('crc32')
 cache = Object.create(null)
 
 exports = module.exports = (options) ->
@@ -12,7 +12,7 @@ exports = module.exports = (options) ->
     file.read (err, string) ->
       if err
         return done(err)
-      hash = file.filename + '#' + calculate(string)
+      hash = file.filename + '#' + crc32(string)
       res = undefined
       try
         res = cache[hash] = cache[hash] or stylus.render(string, options)

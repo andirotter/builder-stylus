@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sse4_crc32": "^3.0.1",
+    "crc32": "^0.2.2",
     "stylus": "^0.50.0"
   },
   "devDependencies": {
